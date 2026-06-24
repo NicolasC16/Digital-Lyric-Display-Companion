@@ -1,0 +1,19 @@
+Arduino Libraries Required: 
+
+LiquidCrystal
+SD
+SPI
+
+Built-in Arduino Libraries:
+-SPI.h
+-SD.h
+-LiquidCrystal.h
+
+
+Python Libraries:
+
+re
+os
+requests
+textwrap
+time 
