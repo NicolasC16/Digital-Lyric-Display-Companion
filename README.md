@@ -82,23 +82,20 @@ This script acts as a fallback when automatic lyric retrieval fails or when lyri
 ---
 # 📂 Project Structure
 Lyric_Display_Project/
-|
-|
-|-- Arduino/
-| |- Lyric_Display.ino
-| |_ libraries.txt
-|
-|-- Python/
-| |- album_catalog_timestamped.py
-| |_ lyric_formatter_timestamped.py
-|
-|-- SD_Card
-| |- Catalog.txt
-| |- albums/
-| |_ lyrics
-| |_ track.txt
-|
-|__ README.md
+
+- Arduino/
+  - Lyric_Display.ino
+  - libraries.txt
+- Python/
+  - album_catalog_timestamped.py
+  - lyric_formatter_timestamped.py
+- SD_Card
+  - Catalog.txt
+  - albums/
+  - lyrics
+  - track.txt
+
+- README.md
 
 ---
 
