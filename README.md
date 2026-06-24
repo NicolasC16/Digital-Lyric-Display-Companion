@@ -1,6 +1,6 @@
 # 🎵 Digital Lyric Display Companion
 
-The Digital Lyrics Display Companion is an embedded vinyl record companion system designed to enhance the analog listening experience through digital technology. Built around an **Arduino Uno R3**, **1602A LCD**, **SD storage module**, and custom firmware, this system organizes vinyl collections, manages album metadata, and displays synchronized lyrics while a record plays.
+The Digital Lyric Display Companion is an embedded vinyl record companion system designed to enhance the analog listening experience through digital technology. Built around an **Arduino Uno R3**, **1602A LCD**, **SD storage module**, and custom firmware, this system organizes vinyl collections, manages album metadata, and displays synchronized lyrics while a record plays.
 
 The goal of this project is to create a personalized listening experience for vinyl collectors — preserving the physical feel of records while adding modern functionality.
 
@@ -53,7 +53,7 @@ The goal of this project is to create a personalized listening experience for vi
 
 # 🧠 How It Works
 
-SpinSync uses a combination of embedded firmware and Python automation tools to prepare and display album data.
+This project uses a combination of embedded firmware and Python automation tools to prepare and display album data.
 
 ### 1. Album Catalog Generation
 
@@ -61,7 +61,7 @@ A Python script automates the creation of the vinyl library by:
 
 1. Searching **MusicBrainz** for album metadata
 2. Retrieving the album tracklist
-3. Querying the **Genius API** for song lyrics
+3. Querying  **LRCLIB** for timestamped song lyrics
 4. Formatting the collected information into files compatible with the Arduino SD card system
 
 This allows new albums to be added quickly without manually entering track information which saves time and adds convience for those with large collections.
@@ -82,19 +82,21 @@ This script acts as a fallback when automatic lyric retrieval fails or when lyri
 ---
 
 # 📂 Project Structure
-SpinSync/
+Lyric_Display_Project/
 │
 ├── Arduino/
-│ ├── SpinSync.ino
+│ ├── Lyric_Display.ino
 │ └── libraries/
 │
 ├── Python/
-│ ├── album_catalog.py
-│ └── lyric_formatter.py
+│ ├── album_catalog_timestamped.py
+│ └── lyric_formatter_timestamped.py
 │
 ├── SD_Card/
+| ├── catalog.txt/
 │ ├── albums/
 │ └── lyrics/
+| └── tracks.txt
 │
 └── README.md
 
@@ -116,7 +118,7 @@ SpinSync/
 
 # 🎯 Project Goals
 
-SpinSync explores the intersection of:
+This project explores the intersection of:
 
 - Embedded systems
 - Hardware/software integration
