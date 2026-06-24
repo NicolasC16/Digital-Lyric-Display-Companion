@@ -80,26 +80,25 @@ Because the LCD 1602A has strict display limitations, a second Python utility sc
 This script acts as a fallback when automatic lyric retrieval fails or when lyrics require manual cleanup.
 
 ---
-
 # 📂 Project Structure
 Lyric_Display_Project/
-│
-├── Arduino/
-│ ├── Lyric_Display.ino
-│ └── libraries/
-│
-├── Python/
-│ ├── album_catalog_timestamped.py
-│ └── lyric_formatter_timestamped.py
-│
-├── SD_Card/
-| ├── catalog.txt/
-│ ├── albums/
-│ └── lyrics/
-| └── tracks.txt
-│
-└── README.md
-
+|
+|
+|-- Arduino/
+| |- Lyric_Display.ino
+| |_ libraries.txt
+|
+|-- Python/
+| |- album_catalog_timestamped.py
+| |_ lyric_formatter_timestamped.py
+|
+|-- SD_Card
+| |- Catalog.txt
+| |- albums/
+| |_ lyrics
+| |_ track.txt
+|
+|__ README.md
 
 ---
 
