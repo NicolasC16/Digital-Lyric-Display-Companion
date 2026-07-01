@@ -22,7 +22,7 @@ def format_for_lcd(text, cols=16):
         seconds = float(match.group(2))
 
         # Convert to seconds for Arduino comparison
-        timestamp = (minutes * 60) + seconds
+        timestamp = f"{minutes:02d}:{seconds:05.2f}"
 
         lyric = match.group(3).strip()
 
@@ -47,7 +47,7 @@ def format_for_lcd(text, cols=16):
                 row2 = " " * cols
 
             frames.append(
-                f"{timestamp:.2f}|{row1}|{row2}"
+                f"{timestamp}|{row1}|{row2}"
             )
 
     return frames
